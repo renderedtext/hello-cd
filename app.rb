@@ -1,5 +1,10 @@
 require "sinatra"
 
 get "/" do
-  "Hello world"
+  erb :index
+end
+
+post "/greet" do
+  @message = "Hello #{params[:name]}"
+  erb :greet
 end
