@@ -1,10 +1,12 @@
-require "sinatra"
+require 'sinatra/base'
 
-get "/" do
-  erb :index
-end
+class Hello < Sinatra::Base
+  get "/" do
+    erb :index
+  end
 
-post "/greet" do
-  @message = "Hello #{params[:name]}"
-  erb :greet
+  post "/greet" do
+    @message = "Hello #{params[:name]}"
+    erb :greet
+  end
 end
