@@ -7,4 +7,4 @@ Feature: view pages
   Scenario: Making a greeting
     Given I am on "the homepage"
     When I fill out the greeting form with "Johnny"
-    Then I should see "Hi Johnny"
+    Then I should see "Јебљај Johnny"
