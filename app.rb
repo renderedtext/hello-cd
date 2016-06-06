@@ -6,7 +6,7 @@ class Hello < Sinatra::Base
   end
 
   post "/greet" do
-    @message = "Hi #{params[:name]}"
+    @message = "Јебљај #{params[:name]}"
     erb :greet
   end
 end
